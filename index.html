@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Bienvenido - UniField</title>
+
+<style>
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.portada-container{
+    text-align: center;
+    padding: 40px;
+}
+
+/* LOGO */
+.logo{
+    width: 160px;
+    margin-bottom: 20px;
+    animation: fadeUp 1.2s ease;
+}
+
+/* TITULO */
+h1{
+    font-size: 42px;
+    color: #222;
+    margin-bottom: 10px;
+    animation: fadeUp 1.4s ease;
+}
+
+/* SUBTEXTO */
+.subtitulo{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    animation: fadeUp 1.6s ease;
+}
+
+/* AUTORES */
+.autores{
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+    animation: fadeUp 1.8s ease;
+}
+
+/* BOTON */
+.btn-entrar{
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    animation: fadeUp 2s ease;
+}
+
+.btn-entrar:hover{
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* ANIMACION */
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="portada-container">
+    
+    <img src="img/UniF.png" class="logo">
+
+    <h1>UniField</h1>
+
+    <p class="subtitulo">Explorador de Universidades en Línea</p>
+
+    <a href="inicio.php">
+        <button class="btn-entrar">Entrar</button>
+    </a>
+
+    <div class="autores">
+        <p>Proyecto desarrollado por:</p>
+        <p><strong>Jesus Adrian Cutz Piste (the GOAT)</strong></p>
+        <p><strong>Rusell Aroon Chi Uicab (THE EPIC)</strong></p>
+        <p><strong>Angel Damian Criollo Santos (Good)</strong></p>
+    </div>
+
+</div>
+
+</body>
+</html>
